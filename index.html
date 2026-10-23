@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow, noarchive, noimageindex, nosnippet">
+  <meta name="description" content="PLab：上课笔记、笔记转面试题、面试题库与每日一题、面经记录。">
+  <title>学习与面试备战｜PLab</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" media="print" onload="this.media='all'"
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&family=Noto+Sans+SC:wght@400;500;700&family=Bebas+Neue&family=JetBrains+Mono:wght@400;600&display=swap">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&family=Noto+Sans+SC:wght@400;500;700&family=Bebas+Neue&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  </noscript>
+
+  <link rel="stylesheet" href="css/tokens.css?v=1">
+  <link rel="stylesheet" href="css/site.css?v=1">
+  <link rel="stylesheet" href="css/pages.css?v=1">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到内容</a>
+
+  <header class="topbar">
+    <a class="brand" href="./" title="返回首页" aria-label="PLab，返回首页">
+      <svg class="logo-mark" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><rect x="1.5" y="1.5" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="5.5" y="5.5" width="7" height="7" fill="currentColor"/></svg>
+      <span>PLab</span>
+    </a>
+<nav class="site-nav" aria-label="主导航">
+      <a href="notes.html">笔记</a>
+      <a href="craft.html">转化</a>
+      <a href="quiz.html">面试题</a>
+      <a href="journey.html">面经</a>
+      <a href="glossary.html">词典</a>
+    </nav>
+    <span class="topbar-note">学习 × 面试备战</span>
+  </header>
+
+  <main id="main">
+    <header class="hero">
+      <span class="kicker">PLab · 学习 × 面试备战</span>
+      <h1>学进去，讲出来</h1>
+      <p class="subtitle">上课笔记 → 面试题 → 每日一题 → 面经复盘，一条完整的备战流水线</p>
+      <p class="lede">笔记沉淀认知，转化练习表达，题库滚动保持手感，面经记录每一场真实战斗。</p>
+    </header>
+
+    <div style="max-width:1080px;margin:0 auto;padding:0 var(--gutter) 8px;" id="homeDaily"></div>
+
+    <!-- 板块入口（由 ui/app.js 依据 data/site.js 渲染） -->
+    <section class="entries" id="homeEntries" aria-label="板块入口"></section>
+  </main>
+
+
+  <footer class="footer">
+    <span>PLab · 个人学习站（未被搜索引擎收录）</span>
+    <span><a href="./" style="color:inherit">← 返回首页</a></span>
+  </footer>
+
+  <!-- 脚本：lib → data → ui → main -->
+  <script src="js/lib/dom.js?v=1"></script>
+  <script src="js/data/site.js?v=1"></script>
+  <script src="js/data/notes.js?v=1"></script>
+  <script src="js/data/craft.js?v=1"></script>
+  <script src="js/data/quiz.js?v=1"></script>
+  <script src="js/data/journey.js?v=1"></script>
+  <script src="js/data/terms.js?v=1"></script>
+  <script src="js/ui/app.js?v=1"></script>
+  <script src="js/main.js?v=1"></script>
+</body>
+</html>

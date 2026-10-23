@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow, noarchive, noimageindex, nosnippet">
+  <meta name="description" content="行程、公司、准备与面试记录。">
+  <title>面经｜PLab</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" media="print" onload="this.media='all'"
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&family=Noto+Sans+SC:wght@400;500;700&family=Bebas+Neue&family=JetBrains+Mono:wght@400;600&display=swap">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&family=Noto+Sans+SC:wght@400;500;700&family=Bebas+Neue&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  </noscript>
+
+  <link rel="stylesheet" href="css/tokens.css?v=1">
+  <link rel="stylesheet" href="css/site.css?v=1">
+  <link rel="stylesheet" href="css/pages.css?v=1">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到内容</a>
+
+  <header class="topbar">
+    <a class="brand" href="./" title="返回首页" aria-label="PLab，返回首页">
+      <svg class="logo-mark" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><rect x="1.5" y="1.5" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="5.5" y="5.5" width="7" height="7" fill="currentColor"/></svg>
+      <span>PLab</span>
+    </a>
+<nav class="site-nav" aria-label="主导航">
+      <a href="notes.html">笔记</a>
+      <a href="craft.html">转化</a>
+      <a href="quiz.html">面试题</a>
+      <a href="journey.html" class="is-active" aria-current="page">面经</a>
+      <a href="glossary.html">词典</a>
+    </nav>
+    <span class="topbar-note">学习 × 面试备战</span>
+  </header>
+
+  <main id="main">
+    <div class="board">
+      <header class="board-head">
+        <span class="kicker">JOURNEY · 板块 04</span>
+        <h2>面经</h2>
+        <p class="lede">行程、公司、准备与面试记录——一次投递一条线，全程留痕，复盘有据。</p>
+      </header>
+
+      <div class="journey-grid" id="journeyApp">
+        <section class="j-section">
+          <h3>行程 <span class="j-sub">SCHEDULE</span></h3>
+          <ul class="tl-list" id="jSchedule"></ul>
+        </section>
+        <section class="j-section">
+          <h3>公司 <span class="j-sub">COMPANIES</span></h3>
+          <div class="co-grid" id="jCompanies"></div>
+        </section>
+        <section class="j-section">
+          <h3>准备 <span class="j-sub">PREP（勾选自动记住）</span></h3>
+          <ul class="prep-list" id="jPrep"></ul>
+        </section>
+        <section class="j-section">
+          <h3>面试记录 <span class="j-sub">RECORDS</span></h3>
+          <div id="jRecords"></div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+
+  <footer class="footer">
+    <span>PLab · 个人学习站（未被搜索引擎收录）</span>
+    <span><a href="./" style="color:inherit">← 返回首页</a></span>
+  </footer>
+
+  <!-- 脚本：lib → data → ui → main -->
+  <script src="js/lib/dom.js?v=1"></script>
+  <script src="js/data/journey.js?v=1"></script>
+  <script src="js/ui/journey.js?v=1"></script>
+  <script src="js/main.js?v=1"></script>
+</body>
+</html>

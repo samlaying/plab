@@ -1,0 +1,3 @@
+# 全站禁止搜索引擎抓取（配合每页 noindex meta，双重保险）
+User-agent: *
+Disallow: /

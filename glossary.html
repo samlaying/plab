@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow, noarchive, noimageindex, nosnippet">
+  <meta name="description" content="站级术语词典。">
+  <title>词典｜PLab</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" media="print" onload="this.media='all'"
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&family=Noto+Sans+SC:wght@400;500;700&family=Bebas+Neue&family=JetBrains+Mono:wght@400;600&display=swap">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@700&family=Noto+Sans+SC:wght@400;500;700&family=Bebas+Neue&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  </noscript>
+
+  <link rel="stylesheet" href="css/tokens.css?v=1">
+  <link rel="stylesheet" href="css/site.css?v=1">
+  <link rel="stylesheet" href="css/pages.css?v=1">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到内容</a>
+
+  <header class="topbar">
+    <a class="brand" href="./" title="返回首页" aria-label="PLab，返回首页">
+      <svg class="logo-mark" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><rect x="1.5" y="1.5" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.5"/><rect x="5.5" y="5.5" width="7" height="7" fill="currentColor"/></svg>
+      <span>PLab</span>
+    </a>
+<nav class="site-nav" aria-label="主导航">
+      <a href="notes.html">笔记</a>
+      <a href="craft.html">转化</a>
+      <a href="quiz.html">面试题</a>
+      <a href="journey.html">面经</a>
+      <a href="glossary.html" class="is-active" aria-current="page">词典</a>
+    </nav>
+    <span class="topbar-note">学习 × 面试备战</span>
+  </header>
+
+  <main id="main">
+    <div class="glossary">
+      <header class="glossary-head">
+        <span class="kicker">GLOSSARY · 术语速查</span>
+        <h2>词典</h2>
+        <p class="lede">站级术语词典：点击词条查看详解；各板块正文里的划线术语也打开同一个抽屉。</p>
+      </header>
+
+      <div class="glossary-tools">
+        <input class="glossary-search" type="search" placeholder="搜索术语 / 定义…" title="快捷键：按 / 聚焦搜索" aria-label="搜索术语">
+        <span class="glossary-count" id="glossaryCount" role="status"></span>
+      </div>
+
+      <div class="dict-layout">
+        <nav class="dict-rail" id="dictRail" aria-label="按分类筛选"></nav>
+        <div id="glossaryList" aria-label="词条列表"></div>
+      </div>
+    </div>
+  </main>
+  <!-- 术语详解抽屉 -->
+  <aside class="term-drawer" id="termDrawer" role="dialog" aria-modal="true" aria-labelledby="termDrawerTitle">
+    <header class="term-drawer-head">
+      <div>
+        <p class="term-drawer-kicker">术语详解</p>
+        <h4 id="termDrawerTitle"></h4>
+      </div>
+      <button class="term-drawer-close" type="button" aria-label="关闭详解">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+          <path d="M1 1l10 10M11 1L1 11" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+      </button>
+    </header>
+    <div class="term-drawer-body"></div>
+  </aside>
+  <div class="term-backdrop" id="termBackdrop"></div>
+
+  <footer class="footer">
+    <span>PLab · 个人学习站（未被搜索引擎收录）</span>
+    <span><a href="./" style="color:inherit">← 返回首页</a></span>
+  </footer>
+
+  <!-- 脚本：lib → data → ui → main -->
+  <script src="js/lib/dom.js?v=1"></script>
+  <script src="js/data/terms.js?v=1"></script>
+  <script src="js/ui/fmt.js?v=1"></script>
+  <script src="js/ui/glossary.js?v=1"></script>
+  <script src="js/ui/drawer.js?v=1"></script>
+  <script src="js/main.js?v=1"></script>
+</body>
+</html>
